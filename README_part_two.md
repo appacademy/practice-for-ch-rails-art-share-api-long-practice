@@ -2,6 +2,17 @@
 
 **Make sure to finish Phases I - III before continuing!**
 
+Before starting Phase IV, go through and add an `inverse_of` option to any
+associations where it is needed:
+
+* any `has_many` that involves a `foreign_key` option on either side of the
+  association
+* any `belongs_to` on a join model that is used in a `has_many :through`
+  association
+
+Be sure to continue adding `inverse_of` to any new associations that you write
+today when it is appropriate!
+
 ## Phase IV: Comments
 
 Now it's time to add commenting functionality to your application so your users
